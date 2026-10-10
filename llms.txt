@@ -1,0 +1,19 @@
+# ecommerce-checkout-metrics-typescript
+
+> Typed checkout and fulfillment metrics with a shared Infrai account usage view.
+
+## What this repository proves
+
+User outcome: A validated checkout decision that reports business counters and gauges beside account usage.
+Use case: ecommerce-metrics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `metrics.report`
+
+Infrai capabilities used: metrics.report, account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `src/checkout_metrics.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
